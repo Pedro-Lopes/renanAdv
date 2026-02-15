@@ -1,13 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaWhatsapp } from 'react-icons/fa';
 
 /**
  * Componente HeroSection - Seção principal do site
  */
 const HeroSection = () => {
-  const phoneNumber = '5500000000000';
-  const message = encodeURIComponent('Olá! Gostaria de solicitar uma consulta jurídica.');
 
   return (
     <section
@@ -52,29 +49,12 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-neutral-100 mb-12 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-neutral-100 mb-32 max-w-3xl mx-auto leading-relaxed"
           >
             Advocacia exercida de forma individualizada, com acompanhamento direto e responsabilidade 
             técnica em cada demanda. O foco está na proteção patrimonial, prevenção de riscos jurídicos 
             e construção de soluções seguras e eficazes.
           </motion.p>
-
-          {/* CTA Button */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-            <a
-              href={`https://wa.me/${phoneNumber}?text=${message}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-secondary hover:bg-secondary/90 text-primary px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              <FaWhatsapp className="text-2xl" />
-              Fale Conosco
-            </a>
-          </motion.div>
 
           {/* Scroll indicator */}
           <motion.div

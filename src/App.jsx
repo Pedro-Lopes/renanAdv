@@ -7,7 +7,6 @@ import PracticeAreasSection from './components/PracticeAreasSection';
 import DifferentialsSection from './components/DifferentialsSection';
 import EthicsSection from './components/EthicsSection';
 import ContactSection from './components/ContactSection';
-import WhatsAppButton from './components/WhatsAppButton';
 import CookieBanner from './components/CookieBanner';
 
 /**
@@ -34,7 +33,6 @@ function App() {
       <Footer />
 
       {/* Componentes flutuantes */}
-      <WhatsAppButton />
       <CookieBanner />
     </div>
   );
