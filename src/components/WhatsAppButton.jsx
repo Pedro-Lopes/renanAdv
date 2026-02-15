@@ -10,7 +10,7 @@ const WhatsAppButton = () => {
   const [showTooltip, setShowTooltip] = useState(true);
 
   // Número do WhatsApp (substituir pelo número real)
-  const phoneNumber = '5521987344564'; // Formato: 55 + DDD + Número
+  const phoneNumber = '5521970226415'; // Formato: 55 + DDD + Número
   const message = encodeURIComponent('Olá! Gostaria de solicitar uma consulta jurídica.');
 
   useEffect(() => {

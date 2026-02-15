@@ -103,8 +103,8 @@ const AboutSection = () => {
                   <p className="text-sm text-neutral-600">Atendimento Personalizado</p>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-md border-l-4 border-secondary">
-                  <p className="text-primary font-bold text-2xl mb-1">OAB</p>
-                  <p className="text-sm text-neutral-600">Conformidade Ética</p>
+                  <p className="text-primary font-bold text-xl mb-1">OAB/RJ</p>
+                  <p className="text-sm text-neutral-600">262.895</p>
                 </div>
               </div>
             </motion.div>

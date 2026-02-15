@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 import { 
   FaPhone, 
   FaEnvelope, 
@@ -35,31 +36,56 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Simulação de envio - integrar com serviço de email real
     setFormStatus('sending');
-    
-    setTimeout(() => {
-      setFormStatus('success');
-      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-      
-      setTimeout(() => {
-        setFormStatus('');
-      }, 5000);
-    }, 1500);
+
+    // Parâmetros para o template do EmailJS
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      from_phone: formData.phone,
+      subject: formData.subject,
+      message: formData.message,
+      to_email: 'rredlien@adv.oabrj.org.br'
+    };
+
+    // Enviar email usando EmailJS
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      templateParams,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+      .then((response) => {
+        console.log('Email enviado com sucesso!', response.status, response.text);
+        setFormStatus('success');
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        
+        setTimeout(() => {
+          setFormStatus('');
+        }, 5000);
+      })
+      .catch((error) => {
+        console.error('Erro ao enviar email:', error);
+        setFormStatus('error');
+        
+        setTimeout(() => {
+          setFormStatus('');
+        }, 5000);
+      });
   };
 
   const contactInfo = [
     {
       icon: FaPhone,
       title: 'Telefone',
-      info: '(21) 98734-4564',
-      link: 'tel:+5521987344564'
+      info: '(21) 97022-6415',
+      link: 'tel:+5521970226415'
     },
     {
       icon: FaEnvelope,
       title: 'E-mail',
-      info: 'contato@redlien.com.br',
-      link: 'mailto:contato@redlien.com.br'
+      info: 'rredlien@adv.oabrj.org.br',
+      link: 'mailto:rredlien@adv.oabrj.org.br'
     },
     {
       icon: FaGlobe,
@@ -69,7 +95,7 @@ const ContactSection = () => {
     }
   ];
 
-  const phoneNumber = '5521987344564';
+  const phoneNumber = '5521970226415';
   const whatsappMessage = encodeURIComponent('Olá! Gostaria de solicitar uma consulta jurídica.');
 
   return (
@@ -263,6 +289,16 @@ const ContactSection = () => {
                   className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg"
                 >
                   Mensagem enviada com sucesso! Entraremos em contato em breve.
+                </motion.div>
+              )}
+
+              {formStatus === 'error' && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg"
+                >
+                  Erro ao enviar mensagem. Por favor, tente novamente ou entre em contato por WhatsApp.
                 </motion.div>
               )}
 

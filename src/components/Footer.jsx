@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaEnvelope, FaPhone, FaIdBadge } from 'react-icons/fa';
 
 /**
  * Componente Footer - Rodapé institucional
@@ -49,13 +49,17 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-neutral-200">
               <li className="flex items-center gap-2">
                 <FaPhone className="text-secondary" />
-                <span>(21) 98734-4564</span>
+                <span>(21) 97022-6415</span>
               </li>
               <li className="flex items-center gap-2">
                 <FaEnvelope className="text-secondary" />
-                <span>contato@redlien.com.br</span>
+                <span>rredlien@adv.oabrj.org.br</span>
               </li>
             </ul>
+            <p className="mt-3 text-sm text-neutral-300 flex items-center gap-2">
+              <FaIdBadge className="text-secondary" />
+              <span>OAB/RJ 262.895</span>
+            </p>
             
             {/* Social Media */}
             <div className="flex gap-4 mt-4">
