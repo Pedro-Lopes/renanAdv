@@ -64,14 +64,18 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex gap-4 mt-4">
               <a
-                href="#"
+                href="https://www.instagram.com/redlienadvocacia?igsh=cGhhMmZtaHBtbjc4"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-2xl hover:text-secondary transition-colors"
                 aria-label="Instagram"
               >
                 <FaInstagram />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/renan-ribeiro-redlien-b4b74b2b1/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-2xl hover:text-secondary transition-colors"
                 aria-label="LinkedIn"
               >

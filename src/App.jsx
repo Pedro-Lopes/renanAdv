@@ -8,6 +8,7 @@ import DifferentialsSection from './components/DifferentialsSection';
 import EthicsSection from './components/EthicsSection';
 import ContactSection from './components/ContactSection';
 import CookieBanner from './components/CookieBanner';
+import WhatsAppButton from './components/WhatsAppButton';
 
 /**
  * Componente principal da aplicação
@@ -34,6 +35,7 @@ function App() {
 
       {/* Componentes flutuantes */}
       <CookieBanner />
+      <WhatsAppButton />
     </div>
   );
 }

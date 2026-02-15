@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 import { 
   FaPhone, 
   FaEnvelope, 
-  FaGlobe,
+  FaInstagram,
   FaWhatsapp,
   FaPaperPlane
 } from 'react-icons/fa';
@@ -88,10 +88,10 @@ const ContactSection = () => {
       link: 'mailto:rredlien@adv.oabrj.org.br'
     },
     {
-      icon: FaGlobe,
-      title: 'Website',
-      info: 'www.redlien.com.br',
-      link: 'https://www.redlien.com.br'
+      icon: FaInstagram,
+      title: 'Instagram',
+      info: '@redlienadvocacia',
+      link: 'https://www.instagram.com/redlienadvocacia?igsh=cGhhMmZtaHBtbjc4'
     }
   ];
 
