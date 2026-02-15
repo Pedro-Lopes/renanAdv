@@ -39,9 +39,11 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-white"
           >
-            <h1 className="text-2xl md:text-3xl font-bold">
-              Redlien <span className="text-secondary">Advocacia</span>
-            </h1>
+            <img 
+              src="/images/logo2.png" 
+              alt="Redlien Advocacia" 
+              className="h-12 md:h-16"
+            />
           </motion.div>
 
           {/* Desktop Menu */}
