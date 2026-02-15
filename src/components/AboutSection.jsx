@@ -67,30 +67,30 @@ const AboutSection = () => {
             {/* Coluna de texto */}
             <motion.div variants={itemVariants} className="space-y-6">
               <div className="prose prose-lg max-w-none">
-                <p className="text-neutral-700 leading-relaxed">
+                <p className="text-neutral-700 leading-relaxed text-justify">
                   Advocacia exercida de forma <strong className="text-primary">individualizada</strong>, 
                   com <strong className="text-primary">acompanhamento direto</strong> e responsabilidade 
                   técnica em cada demanda.
                 </p>
                 
-                <p className="text-neutral-700 leading-relaxed">
+                <p className="text-neutral-700 leading-relaxed text-justify">
                   O foco está na <strong className="text-secondary">proteção patrimonial</strong>, 
                   prevenção de riscos jurídicos e construção de soluções seguras e eficazes.
                 </p>
 
-                <p className="text-neutral-700 leading-relaxed">
+                <p className="text-neutral-700 leading-relaxed text-justify">
                   O atendimento é orientado pela <strong className="text-primary">transparência</strong>, 
                   com informações claras sobre prazos, custos e riscos processuais, respeitando sempre 
                   os limites éticos da profissão.
                 </p>
 
-                <p className="text-neutral-700 leading-relaxed">
+                <p className="text-neutral-700 leading-relaxed text-justify">
                   A comunicação com o cliente é <strong className="text-secondary">direta</strong>, 
                   sem intermediários. Cada caso é conduzido com sigilo absoluto, independência técnica 
                   e total conformidade com o Código de Ética da OAB.
                 </p>
 
-                <p className="text-neutral-700 leading-relaxed">
+                <p className="text-neutral-700 leading-relaxed text-justify">
                   Não há promessa de resultado. O compromisso é com a atuação técnica, diligente e 
                   fundamentada, sempre respeitando o ordenamento jurídico e a dignidade das partes envolvidas.
                 </p>
