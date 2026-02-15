@@ -37,7 +37,7 @@ const AboutSection = () => {
           {/* Título da seção */}
           <motion.div variants={itemVariants} className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-              Sobre o <span className="text-secondary">Escritório</span>
+              Sobre <span className="text-secondary">Nós</span>
             </h2>
             <div className="w-24 h-1 bg-secondary mx-auto" />
           </motion.div>
