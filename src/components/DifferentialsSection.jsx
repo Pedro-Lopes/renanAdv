@@ -28,24 +28,9 @@ const DifferentialsSection = () => {
       description: 'Atuação com compromisso ético, sigilo profissional e independência técnica absoluta.'
     },
     {
-      icon: FaComments,
-      title: 'Comunicação Clara e Objetiva',
-      description: 'Transparência total sobre prazos, custos e riscos processuais em linguagem acessível.'
-    },
-    {
       icon: FaChartLine,
       title: 'Estratégia Jurídica Individualizada',
       description: 'Cada caso é analisado de forma única para construir a melhor solução possível.'
-    },
-    {
-      icon: FaLock,
-      title: 'Foco em Segurança Patrimonial',
-      description: 'Proteção do seu patrimônio com prevenção de riscos e soluções jurídicas eficazes.'
-    },
-    {
-      icon: FaClock,
-      title: 'Acompanhamento Contínuo',
-      description: 'Monitoramento constante de prazos processuais e atualizações sobre o andamento do caso.'
     }
   ];
 

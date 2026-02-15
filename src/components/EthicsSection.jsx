@@ -11,6 +11,11 @@ const EthicsSection = () => {
 
   const ethicsPoints = [
     {
+      icon: FaBalanceScale,
+      title: 'Ética Profissional',
+      description: 'Atuação fundamentada nos mais altos padrões éticos estabelecidos pelo Código de Ética da OAB.'
+    },
+    {
       icon: FaUserShield,
       title: 'Sigilo Profissional',
       description: 'Absoluta confidencialidade em todas as informações e documentos compartilhados.'
@@ -19,26 +24,6 @@ const EthicsSection = () => {
       icon: FaBalanceScale,
       title: 'Independência Técnica',
       description: 'Atuação livre de influências externas, pautada exclusivamente pela lei e ética.'
-    },
-    {
-      icon: FaHandshake,
-      title: 'Urbanidade Processual',
-      description: 'Tratamento respeitoso com todas as partes envolvidas nos processos.'
-    },
-    {
-      icon: FaBan,
-      title: 'Vedação à Promessa de Resultados',
-      description: 'Compromisso com atuação técnica, sem garantias sobre o desfecho das demandas.'
-    },
-    {
-      icon: FaInfoCircle,
-      title: 'Publicidade Informativa',
-      description: 'Comunicação clara e objetiva, em total conformidade com as normas da OAB.'
-    },
-    {
-      icon: FaFileContract,
-      title: 'Honorários Transparentes',
-      description: 'Clareza total sobre custos e formas de pagamento desde o primeiro contato.'
     }
   ];
 
