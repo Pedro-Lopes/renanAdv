@@ -45,17 +45,12 @@ const AboutSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Coluna de imagem/visual */}
             <motion.div variants={itemVariants} className="relative">
-              <div className="aspect-[4/3] bg-gradient-to-br from-primary to-primary/80 rounded-lg shadow-2xl overflow-hidden">
-                {/* Placeholder para imagem - substituir por imagem real */}
-                <div className="w-full h-full flex items-center justify-center text-white/20">
-                  <svg
-                    className="w-32 h-32"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" />
-                  </svg>
-                </div>
+              <div className="aspect-[3/4] rounded-lg shadow-2xl overflow-hidden relative bg-neutral-100">
+                <img 
+                  src="/images/natan.jfif" 
+                  alt="Sobre o Escritório" 
+                  className="w-full h-full object-cover object-center"
+                />
                 {/* Overlay dourado */}
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent" />
               </div>
