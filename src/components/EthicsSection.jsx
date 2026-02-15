@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { FaBalanceScale, FaUserShield, FaHandshake, FaBan, FaInfoCircle } from 'react-icons/fa';
+import { FaBalanceScale, FaUserShield, FaHandshake, FaBan, FaInfoCircle, FaFileContract } from 'react-icons/fa';
 
 /**
  * Componente EthicsSection - Ética Profissional
@@ -34,6 +34,11 @@ const EthicsSection = () => {
       icon: FaInfoCircle,
       title: 'Publicidade Informativa',
       description: 'Comunicação clara e objetiva, em total conformidade com as normas da OAB.'
+    },
+    {
+      icon: FaFileContract,
+      title: 'Honorários Transparentes',
+      description: 'Clareza total sobre custos e formas de pagamento desde o primeiro contato.'
     }
   ];
 

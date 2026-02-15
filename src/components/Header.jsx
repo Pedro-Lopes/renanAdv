@@ -45,7 +45,7 @@ const Header = () => {
           </motion.div>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-10">
             {menuItems.map((item, index) => (
               <motion.a
                 key={item.name}
@@ -53,9 +53,10 @@ const Header = () => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="text-white hover:text-secondary transition-colors duration-300 font-medium"
+                className="text-white hover:text-secondary transition-all duration-300 text-sm uppercase tracking-wider font-semibold relative group"
               >
                 {item.name}
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
               </motion.a>
             ))}
           </nav>
@@ -82,7 +83,7 @@ const Header = () => {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block py-2 text-white hover:text-secondary transition-colors duration-300"
+                className="block py-3 text-white hover:text-secondary transition-colors duration-300 uppercase tracking-wide text-sm font-semibold border-b border-white/10 last:border-0"
               >
                 {item.name}
               </a>

@@ -5,7 +5,8 @@ import {
   FaShieldAlt, 
   FaComments, 
   FaChartLine, 
-  FaLock 
+  FaLock,
+  FaClock
 } from 'react-icons/fa';
 
 /**
@@ -40,6 +41,11 @@ const DifferentialsSection = () => {
       icon: FaLock,
       title: 'Foco em Segurança Patrimonial',
       description: 'Proteção do seu patrimônio com prevenção de riscos e soluções jurídicas eficazes.'
+    },
+    {
+      icon: FaClock,
+      title: 'Acompanhamento Contínuo',
+      description: 'Monitoramento constante de prazos processuais e atualizações sobre o andamento do caso.'
     }
   ];
 
