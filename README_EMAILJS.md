@@ -37,7 +37,6 @@ Nova mensagem do site - {{subject}}
 Você recebeu uma nova mensagem através do formulário de contato do site Redlien Advocacia.
 
 Nome: {{from_name}}
-Email: {{from_email}}
 Telefone: {{from_phone}}
 Assunto: {{subject}}
 

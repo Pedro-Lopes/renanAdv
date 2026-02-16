@@ -18,7 +18,6 @@ const ContactSection = () => {
 
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     phone: '',
     subject: '',
     message: ''
@@ -41,7 +40,6 @@ const ContactSection = () => {
     // Parâmetros para o template do EmailJS
     const templateParams = {
       from_name: formData.name,
-      from_email: formData.email,
       from_phone: formData.phone,
       subject: formData.subject,
       message: formData.message,
@@ -58,7 +56,7 @@ const ContactSection = () => {
       .then((response) => {
         console.log('Email enviado com sucesso!', response.status, response.text);
         setFormStatus('success');
-        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        setFormData({ name: '', phone: '', subject: '', message: '' });
         
         setTimeout(() => {
           setFormStatus('');
@@ -198,38 +196,20 @@ const ContactSection = () => {
                 />
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-neutral-700 mb-2">
-                    E-mail *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all"
-                    placeholder="seu@email.com"
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-neutral-700 mb-2">
+                  Telefone *
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all"
+                  placeholder="(XX) XXXXX-XXXX"
                   />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-neutral-700 mb-2">
-                    Telefone *
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all"
-                    placeholder="(XX) XXXXX-XXXX"
-                  />
-                </div>
               </div>
 
               <div>
